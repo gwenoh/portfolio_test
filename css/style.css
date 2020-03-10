@@ -1,0 +1,304 @@
+body{
+	font-family: 'Playfair Display', Serif;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, header{
+	font-family: 'Ruda', Sans-Serif;
+}
+
+h1{
+	font-size: 48px;
+}
+
+h4{
+	font-size: 28px;
+}
+
+.skip{
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    margin-top: -40px;
+    position: absolute;
+    background-color: white;
+}
+
+.skip:focus{
+	margin-top: 0px;
+} 
+
+.name{
+	font-size: 50px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+
+.heading{
+	display: grid;
+	grid-template-rows: .50fr 1.50fr;
+	min-height: 500px;
+	width: 100%;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	background-color: white;
+}
+
+.nav-bar{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+ 	padding-top: 80px; 
+	padding-bottom: 80px; 
+
+}
+
+.nav_links {
+    
+}
+
+.nav_item {
+	padding-left: 0px;
+}
+
+.nav_item > a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+
+.landing{
+	grid-row: 2 / span 1;
+	grid-column: 1 / span 1;
+	background-color: white;
+}
+
+.landing-info{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	justify-content: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+}
+
+.landing-info > h1{
+	padding-bottom: 20px;
+}
+
+.landing-info > p{
+	padding-bottom: 20px;
+}
+
+#best-sellers{
+	padding-bottom: 40px;
+}
+
+.best-sellers-container{
+	padding: 40px;
+}
+
+.shopping-grid{
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.bg-image-card{
+	background-color: lightgrey;
+	width: 100%;
+	height: 600px;
+}
+
+.image-plant-1{
+	background-image: url(../images/banana-tree.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+.image-plant-2{
+	background-image: url(../images/cactus.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+.image-plant-3{
+	background-image: url(../images/fern.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+.image-plant-4{
+	background-image: url(../images/monstera.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+.image-plant-5{
+	background-image: url(../images/jellybean.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+.image-plant-6{
+	background-image: url(../images/succulent.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+
+.gallery{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 300px;
+    overflow: scroll;
+}
+
+.gallery-image {
+	height: 200px;
+	width: 200px;
+	margin: 15px;
+}
+
+.image-customer-1{
+	background-image: url(../images/customer-1.jpg);
+	background-position: center bottom;
+	background-size: cover;
+}
+
+.image-customer-2{
+	background-image: url(../images/customer-2.jpg);
+	background-position: center bottom;
+	background-size: cover;
+}
+
+.image-customer-3{
+	background-image: url(../images/customer-3.jpg);
+	background-position: center bottom;
+	background-size: cover;
+}
+
+.image-customer-4{
+	background-image: url(../images/customer-4.jpg);
+	background-position: center bottom;
+	background-size: cover;
+}
+
+.image-customer-5{
+	background-image: url(../images/customer-5.jpg);
+	background-position: center bottom;
+	background-size: cover;
+}
+
+
+
+@media screen and (min-width: 850px){
+	.heading{
+		/* extending the grid to include 2nd column */ 
+		grid-template-columns: 1.10fr 0.90fr;
+		
+		/* showing background image*/ 
+		background-image: url(../images/plant-apartment.jpg);
+		background-position: right bottom;
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		height: 700px;
+	}
+
+	header{
+		justify-content: flex-start;
+		width: 100%;
+	}
+
+
+	.nav-bar{
+		flex-direction: row;
+		justify-content: flex-start;
+		padding: 80px;
+	}
+
+	.nav_links{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.nav_item {
+		padding-left: 40px;
+	}	
+
+	.landing{
+		min-height: 400px;
+	}
+
+	.landing-info{
+		padding: 80px;
+	}
+
+	#best-sellers{
+		padding-bottom: 40px;
+	}
+
+	.best-sellers-container{
+		padding: 80px;
+	}
+
+	.shopping-grid{
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 20px;
+	}
+
+	.card{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.bg-image-card{
+		background-color: lightgrey;
+		width: 100%;
+		height: 600px;
+	}
+
+	.gallery{
+  		min-height: 400px;
+	}
+	
+	.gallery-image {
+		height: 300px;
+		width: 300px;
+		margin: 20px;
+	}
+
+
+}
+
+
